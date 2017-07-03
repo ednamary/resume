@@ -1,0 +1,141 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>
+		Dipendra Shrestha Resume
+		</title>
+                
+                <style> 
+                body{
+                        color: green;
+                        font-family: verdana, Arial, Geneva, Arial Black;
+                        font-weight: lighter;
+                }
+                
+                h1{
+                        border: 1px solid black;
+                }
+               
+                p.objective{
+                        color: purple;
+                        font-size: 13pt;
+                        
+                 }  
+
+                p.master{
+                        color: red;
+                        font-size: 13pt;
+                     
+                 }            
+                </style>
+	</head>
+	
+
+        <body>
+		<h1>OBJECTIVE</h1>
+		<p class="objective">Want to work in a field where the use of data analysis and data modelling is heavily dependent on scientific modeling, statistical and mathematical applications.</p>
+        <br>
+
+        <h2>EDUCATION</h2>
+        <p class="master">Master of Science, Business Analytics, CSU East Bay, Hayward, CA 	 June/2017</p>
+        <p class="bachelor">Bachelor of Science, Applied Mathematics, San Jose State, San Jose, CA	June/2015</p>
+        <br>
+
+        <h3>Relevant Coursework</h3>
+        
+        <p class="Coursework">Neural Network, Regression Modelling, Principal Component Analysis, K-means Clustering, Naïve Bayes Classification, Support Vector Machines, Bootstrapping, Statistical Analysis, Hypothesis Testing, Linear/Non-Linear Optimization, Data Visualization, Data Warehousing, Database Management, Tableau, Public Speaking, Philosophy
+        </p>
+
+        <br>
+
+        <h4>TECHNICAL SKILLS</h4>
+        
+        <p class="Programming Language">Programming Language: Python, SQL, R</p>
+        <br>
+        <p class="Software Tools">Software Tools: R-Studio, Erwin Data Modeler, Enterprise Architect, Oracle 11g Express, MS SQL Server Management Studio, Visual Studio 2015</p>
+        <br>
+        <p class="MS Office">MS Office: Excel, Word, PowerPoint, Access, VBA</p>
+        
+        <br>
+
+        <h5><U>ACADEMIC PROJECTS</U></h5>
+
+        <h6>Market Segmentation </h6>
+
+        <p class="Market Segmentation">Downloaded the Social Networking Service data from Packt Publishing website with the filename snsdata.csv representing a random sample of 30,000 U.S. high school students.
+        Conducted Exploratory Data Analysis on the dataset after saving it in a data-frame and discovered several missing values and out of range numerical values.
+        Data cleaning was done on the age variable to get a more reasonable range of ages by using ifelse () function in R.
+        Out of range values of age variable were turned into NA’s and combined with rest of NA’s.
+        Data Imputation technique was employed to convert NA’s in age variable to its respective mean values rather than deleting all of it.
+        Created a separate binary valued dummy variable for each level of Gender variable except one, which was kept for reference and NA’s were categorized under no_Gender dummy variable.
+        Subset of the data frame was created by only including the 36 features that carried the high school students interest like basketball, sex, kissed, death, fashion etc.
+        Z-score standardization was done to the newly created data frame with the use of scale () and lapply () function.
+        5 clusters were chosen based on the five stereotypes: a brain, an athlete, a basket case, a princess, and a criminal as these identities prevail throughout popular teen fiction.
+        Implementation of k-means in the stats package was used to get a cluster object that stored the information about the clusters.
+        Model was evaluated based on number of elements in the group and by examining whether the clusters fell above or below the mean level for each interest category.
+        Five clusters were labelled as Princess, Brains, Criminals, Athletes and Basket Cases after inferring the characteristics of the clusters.</p>
+        <br>
+
+        <h7>Market Basket Analysis </h7>
+        <p>Downloaded the Groceries dataset in the arules R package that contain 9,835 transactions from one month of operation at areal-world grocery store.</p>
+        <p>Converted the transactional data that is of free form to a sparse matrix form where each column represents a grocery item.</p>
+        <p>Conducted Exploratory Data Analysis on the dataset to get information about the structure of the dataset in respect to the most frequent grocery items. </p>
+        <p>Grocery item support – item frequency was visualized using itemFrequencyPlot () function with the support parameter.</p>
+        <p>Groceryrules rules object was created using the implementation of the Apriori algorithm in the arules package with the appropriate support & confidence parameter value.</p>
+        <p>Lift of 463 rules contained in the Groceryrules object were evaluated for model performance, as large lift is an indicator of an important rule.</p>
+        <p>Inspect() function was used to look at specific rules in the groceryrules object that tells us the support, confidence and lift of a rule.</p>
+        <p>Sort() function was combined with vector operators to obtain specific number of interesting rules so that the highest or lowest values of the quality measure come first.</p>
+        <p>Subset() function was used to search for subsets of rules per the need of the marketing team so they can create an advertisement to promote product of interest.</p>
+        <br>
+
+        <h8>Data Visualization </h8>
+        <p>Labor strike in different provinces of China was visualized using Tableau.</p>
+        <p>Data from 2011/Jan – 2016/Dec was downloaded from http://maps.clb.org.hk/strikes/en for Beijing, Guangdong, Shanghai, and Chongqing.</p>
+        <p>Variable Count was created for each row to denote for a strike Event.</p>
+        <p>Variable Year was created from the Date variable of the Strike to do visualization by Year</p>
+        <p>Time Plot for each Province was created using Tableau.</p>
+        <p>Plot of all four Provinces on the same time plot was created with each Province Represented by unique color.</p>
+        <p>Dynamic bubble graph was also created using Tableau.</p>
+        <br>
+
+        <h9>Data warehouse </h9>
+        <p>Designed a data warehouse for a hypothetical coffee company called Sun dusk that wanted to integrate IOT data to analyze its impact on sales. 
+        (IOT: Internet of Things)</p>
+        <p>Created a complete dimensional model (Schema) of 8 dimensions and a Fact table for sales business process keeping business users in mind so they could easily run different analysis.</p>
+        <p>Product, Customer, Date, Employee, Store, Time of Day, Weather, Traffic were the 8 dimensions and Sales was the Fact Table.</p>
+        <p>All the 8 dimensions’ primary keys were included in the Fact Table along with three measures: Unit Price, Quantity and Sales Amount.</p>
+        <p>Erwin Data Modeler r9.7 was used for Logical/Physical implementation of the schema.</p>
+        <p>Report 1: Sales across stores with varying cloud cover during the hours of 8:00 am – 4:00 pm and Months of May—Sep could be easily created.</p>
+        <p>Report 2: Sales across products with varying temperature during the hours of 12:00 pm – 5:00 pm and Months of March—Sep could be easily created</p>
+        <br>
+
+        <h10>Sentiment Analysis </h10>
+        <p>Downloaded the Arabic tweet data from UCI Machine Learning Repository that contained two separate datasets with each having 1000 files and each file containing a single tweet.</p>
+        <p>Imported the whole dataset into Excel and randomized the tweets to classify as ‘Positive’ and ‘Negative’ randomly mixed.</p>
+        <p>Conducted Exploratory Data Analysis on the dataset after saving it in a data-frame.</p>
+        <p>•	Created training and test dataset with stratified sampling to guarantee random partitions with same proportions of each class in both sets of data.</p>
+        <p>Applied Naïve Bayes algorithm to develop a statistical model and evaluated the model performance with accuracy of 73%.</p>
+        <br>
+
+        <h11>Breast Cancer Classification </h11>
+        <p>Downloaded the Wisconsin Breast Cancer Diagnostic dataset from the UCI Machine Learning Repository at http://archive.ics.uci.edu.ml.</p>
+        <p>Conducted Exploratory Data Analysis on the dataset to shine some light on the relationships among the variables.</p>
+        <p>Created a normalize () function in R to normalize some numerical data to deploy k-NN algorithm which is heavily dependent upon the measurement scale of the input features.</p>
+        <p>Created a training dataset to build the k-NN model and a test dataset to be used to estimate the predictive accuracy of the model.</p>
+        <p>Used a k-NN implementation from the class package to build the classifier and evaluated the model performance using CrossTable () function in the gmodels package.</p>
+        <br>
+
+        <h12>WORK EXPERIENCE</h12>
+        <p>Sales Associate, Nordstrom, Inc.  | Palo Alto, CA	09/2007-12/2016</p>
+        <p>Performed physical counting of inventory, tagged merchandise, and updated inventory data.</p>
+        <p>Examined inventory for defects and damage and reported to department manager.</p>
+        <p>Prepared sales action plans and strategies.</p>
+        <p>Developed and maintained a customer database.</p>
+        <p>Planned and conducted direct marketing activities.</p>
+        <p>Recommended changes in product, service, and policy by evaluating results and competitive developments.</p>
+        <p>Resolved customer complaints by investigating problems; developing solutions; prepared reports; and made recommendations to management.</p>
+        <p>Recipient, “Pacesetter Award”, surpassed yearly goals: (2014 - $500K), (2011 & 2013 - $200K).</p>
+        <p>Recipient, “All Star Award”, for providing outstanding customer service.</p>
+
+	</body>
+</html>
